@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <label for="AcceptConditions" class="theme-toggle">
+        <input type="checkbox" id="AcceptConditions" class="peer sr-only" />
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+
+    <div class="game-container">
+      <h1>Tic-Tac-Toe Web App</h1>
+      <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      <p class="status" id="status">Player X's turn</p>
+      <button id="reset">Reset Game</button>
+    </div>
+
+    <audio id="click-sound" src="./audio/click.wav"></audio>
+    <audio id="win-sound" src="./audio/win.wav"></audio>
+    <audio id="draw-sound" src="./audio/draw.mp3"></audio>
+
+    <footer>
+      <p>
+        &copy; 2025 Tigist Worku. All rights reserved. | Tic-Tac-Toe Web App
+        (Prodigy Infotech Task-03)
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
